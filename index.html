@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JOão Manoel | Portfólio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes fade-in-down {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  
+    @keyframes fade-in-up {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  
+    .animate-fade-in-down {
+      animation: fade-in-down 0.8s ease-out;
+    }
+  
+    .animate-fade-in-up {
+      animation: fade-in-up 0.8s ease-out;
+    }
+  </style>  
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-5xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-xl font-bold">João Manoel | Software Developer</h1>
+      <nav class="space-x-4">
+        <a href="#sobre" class="hover:text-blue-600">Sobre</a>
+        <a href="#projetos" class="hover:text-blue-600">Projetos</a>
+        <a href="#contato" class="hover:text-blue-600">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Seção Sobre -->
+  <section id="sobre" class="py-16 bg-gray-50 animate-fade-in-down">
+    <div class="max-w-4xl mx-auto flex flex-col items-center text-center px-4">
+      <img src="assets/foto-perfil.jpg" alt="Foto" class="w-32 h-32 rounded-full mb-4 border" />
+      <h2 class="text-3xl font-bold mb-2">Olá! Eu sou João Manoel</h2>
+      <p class="text-gray-600 max-w-xl">Sou desenvolvedor web apaixonado por criar interfaces modernas e funcionais. Meu foco é transformar ideias em projetos reais com qualidade e performance.</p>
+      <a href="docs/curriculo.pdf" download class="inline-block mt-6 bg-blue-600 text-white px-6 py-2 rounded-xl shadow hover:bg-blue-700 transition">
+        📄 Baixar Currículo
+      </a>
+      
+    </div>
+  </section>
+
+  <!-- Seção Projetos -->
+  <section id="projetos" class="py-16">
+    <div class="max-w-5xl mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-8 text-center">Projetos</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+        <!-- Projeto 1 -->
+        <div class="bg-white rounded-xl shadow p-4 hover:shadow-lg transition animate-fade-in-up">
+          <h3 class="text-xl font-semibold mb-2">LinkBio Generator</h3>
+          <p class="text-gray-600 mb-2">Uma mini plataforma estilo Linktree, com edição em tempo real e links únicos compartilháveis.</p>
+          <a href="linkbio/index.html" target="_blank" class="text-blue-600 hover:underline">Ver projeto</a>
+        </div>
+
+        <!-- Projeto 2 (adicione mais assim) -->
+        <!-- ... -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Contato -->
+  <section id="contato" class="py-16 bg-gray-50">
+    <div class="max-w-xl mx-auto px-4 text-center">
+      <h2 class="text-2xl font-bold mb-4">Vamos conversar?</h2>
+      <p class="text-gray-600 mb-6">Você pode me encontrar no e-mail ou nas redes sociais abaixo:</p>
+      <div class="flex justify-center space-x-6">
+        <a href="mailto:joaaomanoeljok@gmail.com" class="text-blue-600 hover:underline">Email</a>
+        <a href="https://github.com/j0ao-s" class="text-blue-600 hover:underline">GitHub</a>
+        <a href="https://www.linkedin.com/in/joâo-manoel-a789781a2/" class="text-blue-600 hover:underline">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center py-6 text-gray-500 text-sm">
+    © 2025 - Desenvolvido por João
+  </footer>
+
+</body>
+</html>
