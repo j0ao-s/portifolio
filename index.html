@@ -3,9 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>JOão Manoel | Portfólio</title>
+  <title>João Manoel | Portfólio</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
     @keyframes fade-in-down {
       0% {
         opacity: 0;
@@ -39,20 +44,40 @@
 </head>
 <body class="bg-gray-100 text-gray-800">
 
-  <!-- Header -->
-  <header class="bg-white shadow-md sticky top-0 z-50">
-    <div class="max-w-5xl mx-auto flex justify-between items-center p-4">
-      <h1 class="text-xl font-bold">João Manoel | Software Developer</h1>
-      <nav class="space-x-4">
-        <a href="#sobre" class="hover:text-blue-600">Sobre</a>
-        <a href="#projetos" class="hover:text-blue-600">Projetos</a>
-        <a href="#contato" class="hover:text-blue-600">Contato</a>
-      </nav>
-    </div>
-  </header>
+<!-- Header -->
+<header class="bg-white dark:bg-gray-900 shadow-md fixed w-full z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+    
+    <!-- Logo -->
+    <a href="#" class="text-xl font-bold text-gray-800 dark:text-white">João Manoel</a>
+
+    <!-- Botão Hamburguer (só aparece no mobile) -->
+    <button id="menu-btn" class="md:hidden text-gray-800 dark:text-white focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+           stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+    <!-- Menu Desktop -->
+    <nav class="hidden md:flex space-x-6">
+      <a href="#sobre" class="text-gray-700 dark:text-gray-300 hover:text-blue-500">Sobre</a>
+      <a href="#projetos" class="text-gray-700 dark:text-gray-300 hover:text-blue-500">Projetos</a>
+      <a href="#contato" class="text-gray-700 dark:text-gray-300 hover:text-blue-500">Contato</a>
+    </nav>
+  </div>
+
+  <!-- Menu Mobile -->
+  <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2 bg-white dark:bg-gray-900">
+    <a href="#sobre" class="block text-gray-700 dark:text-gray-300 hover:text-blue-500">Sobre</a>
+    <a href="#projetos" class="block text-gray-700 dark:text-gray-300 hover:text-blue-500">Projetos</a>
+    <a href="#contato" class="block text-gray-700 dark:text-gray-300 hover:text-blue-500">Contato</a>
+  </div>
+</header>
+
 
   <!-- Seção Sobre -->
-  <section id="sobre" class="py-16 bg-gray-50 animate-fade-in-down">
+  <section id="sobre" class="pt-20 py-16 bg-gray-50 animate-fade-in-down">
     <div class="max-w-4xl mx-auto flex flex-col items-center text-center px-4">
       <img src="assets/foto-perfil.jpg" alt="Foto" class="w-32 h-32 rounded-full mb-4 border" />
       <h2 class="text-3xl font-bold mb-2">Olá! Eu sou João Manoel</h2>
@@ -72,12 +97,24 @@
 
         <!-- Projeto 1 -->
         <div class="bg-white rounded-xl shadow p-4 hover:shadow-lg transition animate-fade-in-up">
-          <h3 class="text-xl font-semibold mb-2">LinkBio Generator</h3>
-          <p class="text-gray-600 mb-2">Uma mini plataforma estilo Linktree, com edição em tempo real e links únicos compartilháveis.</p>
-          <a href="linkbio/index.html" target="_blank" class="text-blue-600 hover:underline">Ver projeto</a>
+          <h3 class="text-xl font-semibold mb-2">MiniGames em Python</h3>
+          <p class="text-gray-600 mb-2">Um SpaceShooter e um Pong, dois dos jogos mais clássicos feitos em Python utilizando PyGame.</p>
+          <a href="https://github.com/j0ao-s/python-games" target="_blank" class="text-blue-600 hover:underline">Ver projeto</a>
         </div>
 
-        <!-- Projeto 2 (adicione mais assim) -->
+        <!-- Projeto 2-->
+        <div class="bg-white rounded-xl shadow p-4 hover:shadow-lg transition animate-fade-in-up">
+          <h3 class="text-xl font-semibold mb-2">Site para Congresso</h3>
+          <p class="text-gray-600 mb-2">Um Projeto Voluntário, fiz um site que levava os congressistas, informações e links direcionais à inscrição do Evento</p>
+          <a href="https://github.com/j0ao-s/conclave" target="_blank" class="text-blue-600 hover:underline">Ver projeto</a>
+        </div>
+
+        <!-- Projeto 3-->
+        <div class="bg-white rounded-xl shadow p-4 hover:shadow-lg transition animate-fade-in-up">
+          <h3 class="text-xl font-semibold mb-2">Site Hotel Serra Sul</h3>
+          <p class="text-gray-600 mb-2">Uma proposta de modernização do Site do Hotel Serra Sul, moderno, limpo, informacional, institucional</p>
+          <a href="https://conclavevi.netlify.app" target="_blank" class="text-blue-600 hover:underline">Ver projeto</a>
+        </div>
         <!-- ... -->
 
       </div>
@@ -100,6 +137,6 @@
   <footer class="text-center py-6 text-gray-500 text-sm">
     © 2025 - Desenvolvido por João
   </footer>
-
+  <script src="script.js"></script>
 </body>
 </html>

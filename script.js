@@ -1,18 +1,16 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
 
-const toggle = document.getElementById('toggleDark');
-const html = document.documentElement;
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
 
-// Carrega preferência salva
-if (localStorage.theme === 'dark') {
-    html.classList.add('dark');
-}
-
-toggle.addEventListener('click', () => {
-    if (html.classList.contains('dark')) {
-      html.classList.remove('dark');
-      localStorage.theme = 'light';
-    } else {
-      html.classList.add('dark');
-      localStorage.theme = 'dark';
-    }
+  // Fechar menu mobile ao clicar em um link
+  const links = mobileMenu.querySelectorAll("a");
+  links.forEach(link => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.add("hidden");
+    });
+  });
 });
