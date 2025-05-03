@@ -5,42 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>João Manoel | Portfólio</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-
-    @keyframes fade-in-down {
-      0% {
-        opacity: 0;
-        transform: translateY(-20px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-  
-    @keyframes fade-in-up {
-      0% {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-  
-    .animate-fade-in-down {
-      animation: fade-in-down 0.8s ease-out;
-    }
-  
-    .animate-fade-in-up {
-      animation: fade-in-up 0.8s ease-out;
-    }
-  </style>  
+  <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body class="bg-gray-100 text-gray-800">
 
@@ -51,7 +16,7 @@
     <!-- Logo -->
     <a href="#" class="text-xl font-bold text-gray-800 dark:text-white">João Manoel</a>
 
-    <!-- Botão Hamburguer (só aparece no mobile) -->
+    <!-- Botão Hamburguer-->
     <button id="menu-btn" class="md:hidden text-gray-800 dark:text-white focus:outline-none">
       <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
            stroke-linecap="round" stroke-linejoin="round">
@@ -81,13 +46,62 @@
     <div class="max-w-4xl mx-auto flex flex-col items-center text-center px-4">
       <img src="assets/foto-perfil.jpg" alt="Foto" class="w-32 h-32 rounded-full mb-4 border" />
       <h2 class="text-3xl font-bold mb-2">Olá! Eu sou João Manoel</h2>
-      <p class="text-gray-600 max-w-xl">Sou desenvolvedor web apaixonado por criar interfaces modernas e funcionais. Meu foco é transformar ideias em projetos reais com qualidade e performance.</p>
+      <p class="text-gray-600 max-w-xl text-justify">Propósito é a razão pela qual existimos. É a motivação que nos impulsiona a acordar todos os dias e a continuar lutando por aquilo em que acreditamos. Encontrar o nosso propósito pode ser uma jornada desafiadora, mas é fundamental para uma vida plena e significativa.</p>
+      <br>
+      <p class="text-gray-600 max-w-xl text-justify">Prazer, me chamo João Manoel e para mim é muito gratificante contar um pedaço da minha história. Atualmente sou Estudante de Engenharia de Software na Universidade Estadual do Pará, por onde, através de mestres e doutores, aprendi e continuo aprendendo conceitos excepcionais na área de desenvolvimento de software e arquitetura de sistemas. Além disso, estou cursando Técnico em Desenvolvimento de Jogos no SENAC, onde tenho aprimorado minhas habilidades em Unity, C# e Python (PyGame), explorando minha paixão por criar soluções criativas e imersivas na área de games.</p>
+      <br>
+      <p class="text-gray-600 max-w-xl text-justify">Costumo acreditar na minha capacidade criativa para resolução de problemas, utilizando tecnologias como HTML, CSS, JavaScript, React e PHP. Também mantenho conhecimento em linguagem C para soluções monolíticas e em bancos de dados como PostgreSQL e NoSQL.</p>
       <a href="docs/curriculo.pdf" download class="inline-block mt-6 bg-blue-600 text-white px-6 py-2 rounded-xl shadow hover:bg-blue-700 transition">
         📄 Baixar Currículo
       </a>
       
     </div>
   </section>
+
+  <!-- Seção Experiências e Formação -->
+  <section id="experiencias" class="py-16 bg-white dark:bg-gray-900">
+    <div class="max-w-5xl mx-auto px-4">
+      <h2 class="text-2xl font-bold text-center mb-10 dark:text-white">Experiências & Formação</h2>
+      
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Experiência Profissional -->
+        <div class="animate-fade-in-up">
+          <h3 class="text-xl font-semibold mb-4 text-blue-600 dark:text-blue-400">Experiência Profissional</h3>
+          <ul class="space-y-4 text-gray-700 dark:text-gray-300">
+            <li>
+              <strong>Analista de Serviços de TI I - Softplan</strong> <br>
+              Suporte técnico para sistemas públicos, com foco em consultas complexas em bancos NoSQL. (2024 - Atualmente)
+            </li>
+            <li>
+              <strong>Estágio em Desenvolvimento de Sistemas - Orbe Tecnologia</strong> <br>
+              Desenvolvimento de protótipos utilizando tecnologias BackEnd. (2023).
+            </li>
+            <li>
+              <strong>Freelancer Web</strong> <br>
+              Desenvolvimento de sites institucionais, landing pages e soluções personalizadas (2022 - atual).
+            </li>
+            
+            
+          </ul>
+        </div>
+  
+        <!-- Formação Acadêmica -->
+        <div class="animate-fade-in-up">
+          <h3 class="text-xl font-semibold mb-4 text-blue-600 dark:text-blue-400">Formação Acadêmica</h3>
+          <ul class="space-y-4 text-gray-700 dark:text-gray-300">
+            <li>
+              <strong>Engenharia de Software - UEPA</strong> <br>
+              2022 - Atual
+            </li>
+            <li>
+              <strong>Técnico em Desenvolvimento de Jogos - SENAC</strong> <br>
+              2025 - Atual
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </section>
 
   <!-- Seção Projetos -->
   <section id="projetos" class="py-16">
@@ -105,8 +119,8 @@
         <!-- Projeto 2-->
         <div class="bg-white rounded-xl shadow p-4 hover:shadow-lg transition animate-fade-in-up">
           <h3 class="text-xl font-semibold mb-2">Site para Congresso</h3>
-          <p class="text-gray-600 mb-2">Um Projeto Voluntário, fiz um site que levava os congressistas, informações e links direcionais à inscrição do Evento</p>
-          <a href="https://github.com/j0ao-s/conclave" target="_blank" class="text-blue-600 hover:underline">Ver projeto</a>
+          <p class="text-gray-600 mb-2">Um Projeto Voluntário, fiz um site que levava aos congressistas, informações e links direcionais à inscrição do Evento</p>
+          <a href="https://conclavevi.netlify.app" target="_blank" class="text-blue-600 hover:underline">Ver projeto</a>
         </div>
 
         <!-- Projeto 3-->
@@ -120,6 +134,44 @@
       </div>
     </div>
   </section>
+
+  
+
+  <!-- Seção Skills -->
+  <section id="skills" class="py-16 bg-gray-50 dark:bg-gray-800">
+  <div class="max-w-5xl mx-auto px-4">
+    <h2 class="text-2xl font-bold text-center mb-10 dark:text-white">Minhas Habilidades</h2>
+    
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Hard Skills -->
+      <div class="animate-fade-in-up">
+        <h3 class="text-xl font-semibold mb-4 text-blue-600 dark:text-blue-400">Hard Skills</h3>
+        <ul class="grid grid-cols-2 gap-3 text-gray-700 dark:text-gray-300">
+          <li>HTML / CSS / JS</li>
+          <li>React</li>
+          <li>PHP</li>
+          <li>MySQL / PostgreSQL</li>
+          <li>Python / PyGame</li>
+          <li>Unity / C#</li>
+        </ul>
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="animate-fade-in-up">
+        <h3 class="text-xl font-semibold mb-4 text-blue-600 dark:text-blue-400">Soft Skills</h3>
+        <ul class="grid grid-cols-2 gap-3 text-gray-700 dark:text-gray-300">
+          <li>Comunicação</li>
+          <li>Trabalho em equipe</li>
+          <li>Resolução de problemas</li>
+          <li>Proatividade</li>
+          <li>Adaptabilidade</li>
+          <li>Autodidatismo</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </section>
+
 
   <!-- Seção Contato -->
   <section id="contato" class="py-16 bg-gray-50">
@@ -135,7 +187,7 @@
   </section>
 
   <footer class="text-center py-6 text-gray-500 text-sm">
-    © 2025 - Desenvolvido por João
+    © 2025 - Desenvolvido por João Manoel
   </footer>
   <script src="script.js"></script>
 </body>
