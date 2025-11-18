@@ -1,6 +1,6 @@
 # Portfólio — Esqueleto Preto & Branco
 
-Este é um esqueleto minimalista em preto e branco com uma animação 3D sutil (Three.js). A ideia é você preencher os textos, trocar os links e decidir para onde cada botão deve levar.
+Este é um esqueleto minimalista em preto e branco com uma animação 3D sutil (Three.js). A ideia é você preencher os textos, trocar os links e decidir para onde cada botão deve levar. Tst
 
 ## Onde editar
 
