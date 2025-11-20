@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark light" />
+    <title>Trabalhos — João Manoel</title>
+    <meta name="description" content="Conheça os projetos e trabalhos realizados por João Manoel." />
+    <meta name="author" content="João Manoel" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header">
+      <div class="container header-row">
+        <a href="index.html" class="logo" aria-label="Voltar ao início">JM</a>
+        <nav class="nav" aria-label="Principal">
+          <button id="menu-btn" class="nav-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+          <ul id="menu" class="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="trabalhos.html">Trabalhos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <!-- Trabalho -->
+      <section id="trabalho" class="section trabalhos-fullscreen">
+        <div class="container trabalhos-container">
+          <div class="trabalhos-header">
+            <h1 class="trabalhos-main-title">TRABALHOS</h1>
+          </div>
+
+          <div class="trabalhos-accordion">
+            <!-- Formação -->
+            <div class="accordion-section" data-animar="1">
+              <div class="accordion-header" onclick="toggleAccordion(this)">
+                <div class="trabalho-icone formacao">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22 10V6C22 4.895 21.105 4 20 4H4C2.895 4 2 4.895 2 6V10C3.105 10 4 10.895 4 12C4 13.105 3.105 14 2 14V18C2 19.105 2.895 20 4 20H20C21.105 20 22 19.105 22 18V14C20.895 14 20 13.105 20 12C20 10.895 20.895 10 22 10Z" stroke="currentColor" stroke-width="2"/>
+                    <path d="M10 9L8 12L10 15M14 9L16 12L14 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <span class="accordion-title">Formação</span>
+                <div class="accordion-arrow">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="accordion-content">
+                <div class="trabalho-item">
+                  <span class="trabalho-nome">Engenharia de Software</span>
+                  <span class="trabalho-desc">Universidade Federal do Pará</span>
+                  <span class="trabalho-ano">2027</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Experiência -->
+            <div class="accordion-section" data-animar="2">
+              <div class="accordion-header" onclick="toggleAccordion(this)">
+                <div class="trabalho-icone experiencia">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 7H4C2.895 7 2 7.895 2 9V19C2 20.105 2.895 21 4 21H20C21.105 21 22 20.105 22 19V9C22 7.895 21.105 7 20 7Z" stroke="currentColor" stroke-width="2"/>
+                    <path d="M16 21V5C16 3.895 15.105 3 14 3H10C8.895 3 8 3.895 8 5V21" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                </div>
+                <span class="accordion-title">Experiência Profissional</span>
+                <div class="accordion-arrow">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="accordion-content">
+                <div class="trabalho-item">
+                  <span class="trabalho-nome">Unidade EMBRAPII</span>
+                  <span class="trabalho-desc">Desenvolvimento de Sites e Serviços WEB</span>
+                  <span class="trabalho-ano">Presente</span>
+                </div>
+                <div class="trabalho-item">
+                  <span class="trabalho-nome">Softplan</span>
+                  <span class="trabalho-desc">Suporte técnico a sistemas públicos e bancos de dados NoSQL</span>
+                  <span class="trabalho-ano">2024</span>
+                </div>
+                <div class="trabalho-item">
+                  <span class="trabalho-nome">Orbe Tecnologia</span>
+                  <span class="trabalho-desc">Desenvolvimento Back-end e implementação de protótipos</span>
+                  <span class="trabalho-ano">2023</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Projetos -->
+            <div class="accordion-section" data-animar="3">
+              <div class="accordion-header" onclick="toggleAccordion(this)">
+                <div class="trabalho-icone projeto">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <span class="accordion-title">Casos de Sucesso</span>
+                <div class="accordion-arrow">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="accordion-content">
+                <div class="trabalho-item">
+                  <span class="trabalho-nome">Informa AI</span>
+                  <span class="trabalho-desc">Uma ideia selecionada para ser acelerado, o ínicio de uma startup inovadora.</span>
+                  <span class="trabalho-ano">2025</span>
+                </div>
+                <div class="trabalho-item">
+                  <span class="trabalho-nome">Voluntariado</span>
+                  <span class="trabalho-desc">Pessoas mudam pessoas, participante ativo na Ordem DeMolay</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contador -->
+          <div class="contador-section">
+            <div class="contador-item" data-animar="4">
+              <div class="contador-numero" data-target="1000">0</div>
+              <div class="contador-label">Pessoas impactadas pela minha tecnologia</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <small>© 2025 — João Manoel</small>
+        <small class="muted"></small>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

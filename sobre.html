@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="dark light" />
-    <title>João Manoel — Software Engineer</title>
-    <meta name="description" content="Meu portifólio, venha conhecer, minhas habilidades e projetos." />
+    <title>Sobre — João Manoel</title>
+    <meta name="description" content="Conheça mais sobre João Manoel, suas habilidades e experiências." />
     <meta name="author" content="João Manoel" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,7 +17,7 @@
 
     <header class="site-header">
       <div class="container header-row">
-        <a href="#inicio" class="logo" aria-label="Voltar ao início">JM</a>
+        <a href="index.html" class="logo" aria-label="Voltar ao início">JM</a>
         <nav class="nav" aria-label="Principal">
           <button id="menu-btn" class="nav-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
           <ul id="menu" class="menu">
@@ -31,29 +31,14 @@
     </header>
 
     <main id="conteudo">
-      <!-- Hero -->
-      <section id="inicio" class="section hero">
-        <div class="hero-bg">
-          <canvas id="scene-canvas" aria-hidden="true"></canvas>
-        </div>
-        <div class="container hero-grid">
-          <div class="hero-text">
-            <div class="identity">
-              <img src="assets/foto-perfil.jpg" alt="Sua foto" class="avatar" id="profile-photo" />
-              <div class="name-block">
-                <h1>
-                  João Manoel
-                  <span class="muted">— Engenharia de Software</span>
-                </h1>
-              </div>
-            </div>
-            <p class="lead">
-              Um pequeno recorte do meu trabalho e habilidades. Entre em contato, vamos falar de tecnologia e inovação.
-            </p>
-            <div class="actions">
-              <a class="btn primary" href="trabalhos.html" data-button="primario">Ver projetos</a>
-              <a class="btn" href="https://wa.me/5591984164596" data-button="secundario">Fale comigo</a>
-            </div>
+      <!-- Sobre -->
+      <section id="sobre" class="section sobre-fullscreen">
+        <div class="container">
+          <div class="frases-animadas">
+            <p class="frase" data-frase="1">Tenho 22 anos, sou Engenheiro de Software e </p>
+            <p class="frase" data-frase="2">um aspirante a Empreendedor. Atualmente construo e desenvolvo</p>
+            <p class="frase" data-frase="3">Soluções inovadoras para desafios complexos.</p>
+            <p class="frase" data-frase="4">Acredito na inovação e no poder da tecnologia para transformar o mundo. Adoro Pizza, sair com meus amigos e viajar, vamos inovar juntos?</p>
           </div>
         </div>
       </section>
@@ -66,11 +51,7 @@
       </div>
     </footer>
 
-    <noscript>
-      <div class="noscript container narrow">Animações 3D desativadas porque o JavaScript está desligado.</div>
-    </noscript>
-
-    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

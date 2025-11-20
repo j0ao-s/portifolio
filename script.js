@@ -16,7 +16,46 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   initThree();
+  initContador();
 });
+
+/* Contador animado */
+function initContador() {
+  const contadores = document.querySelectorAll('.contador-numero');
+  
+  contadores.forEach(contador => {
+    let current = 0;
+    const incremento = 1;
+    const intervalo = 500; // A cada 500ms adiciona 1 (mais lento)
+    
+    // Inicia o contador infinito imediatamente
+    const contadorInterval = setInterval(() => {
+      current += incremento;
+      contador.textContent = current.toLocaleString('pt-BR');
+    }, intervalo);
+    
+    // Inicia após um delay para sincronizar com a animação
+    setTimeout(() => {
+      // O contador já está rodando, não precisa fazer nada extra
+    }, 900);
+  });
+}
+
+/* Accordion functionality */
+function toggleAccordion(header) {
+  const section = header.parentElement;
+  const isActive = section.classList.contains('active');
+  
+  // Fecha todos os accordions
+  document.querySelectorAll('.accordion-section').forEach(sec => {
+    sec.classList.remove('active');
+  });
+  
+  // Se não estava ativo, ativa o clicado
+  if (!isActive) {
+    section.classList.add('active');
+  }
+}
 
 /* 3D sutil com Three.js (wireframe icosaedro) */
 function initThree() {
